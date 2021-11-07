@@ -2,7 +2,7 @@
 #include <unistd.h> //needed for fork() & getpid()
 #include <stdlib.h> //needed for exit()
 #include <sys/wait.h> //needed for wait()
-
+//This program to identify parent & child process
 int main()
 {
  int pid; // process ID
