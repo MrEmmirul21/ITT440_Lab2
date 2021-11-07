@@ -1,6 +1,6 @@
-#include <stdlib.h> //needed to define exit()
+#include <stdio.h>  //needed for printf()
 #include <unistd.h> //needed for fork() & getpid()
-#include <stdio.h> //needed for printf()
+#include <stdlib.h> //needed for exit()
 #include <sys/wait.h> //needed for wait()
 
 int main()
@@ -10,15 +10,15 @@ int main()
  switch (pid = fork())
  {
   case 0:  // fork() returns 0 to the child
-          printf("I am the child process: pid=%d \n ",getpid());
+          printf("I'm the child process: pid=%d\n",getpid());
           break;
 
-  default: // fork() returns a pid to the parent
+  default:  // fork() returns a pid to the parent
           wait(NULL);
-          printf("I am the parent process: \n parent pid=%d child pid=%d \n ",getpid(),pid);
+          printf("I'm the parent process: pid=%d , child pid=%d\n",getpid(),pid);
           break;
 
-  case -1: // something went wrong
+  case -1:  // something went wrong
           perror("fork");
           exit(1);
  }
