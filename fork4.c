@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/wait.h>
-#include <sys/types.h> //needed for getppid() & getpid()
+#include <sys/types.h>
 //This program to create multiple child
 int main()
 {
