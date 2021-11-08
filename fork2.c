@@ -1,7 +1,7 @@
 #include <stdio.h>  //needed for printf()
-#include <unistd.h> //needed for fork() & getpid()
-#include <stdlib.h> //needed for exit()
-#include <sys/wait.h> //needed for wait()
+#include <unistd.h>  //needed for fork() & getpid()
+#include <stdlib.h>  //needed for exit()
+#include <sys/wait.h>  //needed for wait()
 //This program to identify parent & child process
 int main()
 {

@@ -3,14 +3,14 @@
 #include <stdlib.h>
 #include <sys/wait.h>
 #include <sys/types.h>
-// This program to execute parent and child process task
+// This program to execute parent and child process task.
 void childTask()
 {
  printf("Assalamu'alaikum, I'm his daughter\n");
 }
 void parentTask()
 {
- printf("Wa'alaikumussalam and I'm her father\n");
+ printf("Wa'alaikumussalam, and I'm her father\n");
 }
 
 int main()
