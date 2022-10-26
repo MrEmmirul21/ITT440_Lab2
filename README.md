@@ -1,4 +1,1 @@
-Emmirul Haziq Bin Mohd Rashid
-2021341071
-CS2554A
-Lab2: Parent and Child Process
+This is source code to display parent and child process by using fork() system call.
